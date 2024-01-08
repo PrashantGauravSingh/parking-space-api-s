@@ -1,0 +1,8 @@
+#app.yaml
+runtime: python39
+env_variables:
+  CLOUD_SQL_USERNAME: root
+  CLOUD_SQL_PASSWORD: Singhmania@92
+  CLOUD_SQL_DATABASE_NAME: CarParking
+  CLOUD_SQL_CONNECTION_NAME: car-parking-410206:us-central1:parkingdemo
+
