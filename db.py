@@ -61,4 +61,18 @@ def add_spacesallocation(spacesallocation):
     conn.commit()
     conn.close()
 
+def space_allocated_deleted(id):
+    conn = open_connection()
+    with conn.cursor() as cursor:
+        cursor.execute('DELETE FROM spaceallocation WHERE bay_id = %s', id)
+    conn.commit()
+    conn.close()
+
+def space_deleted(id):
+    conn = open_connection()
+    with conn.cursor() as cursor:
+        cursor.execute('DELETE FROM space WHERE id = %s', id)
+    conn.commit()
+    conn.close()
+
 
